@@ -5,7 +5,12 @@ import { ReactComponent as LineGraph } from './vectors/landingpage.svg';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
+  const tracks = ['track1', 'track2', 'track3', 'track4', 'track5', 'track6', 'track7', 'track8', 'track9', 'track10'];
+  const listTracks = tracks.map((track) => 
+    <li>{track}</li>
+  );
 
+  
   return (
     <>
       {!loggedIn &&  (
@@ -22,7 +27,11 @@ function App() {
         <div className="App">
           <h1>My Data</h1>
           <div className="data">
-            <h2 className="top10tracks">My Top 10 Tracks </h2>
+            <div className="top10tracks">
+              <h2>My Top 10 Tracks </h2>
+              <ul>{listTracks}</ul>
+            </div>
+
             <div className="chart">
               <LineChart />
             </div>
