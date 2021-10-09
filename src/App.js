@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState, useEffect, useRef } from 'react';
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {!loggedIn &&  (
+        <div className="App">
+          <h1>My Spotify Architect</h1>
+          <h2>Visualize your data</h2>
+          <button onClick={() => setLoggedIn(true)}>Spotify Log In</button>
+        </div>
+      )}
+      {loggedIn && (
+        <div className="App">
+          <h1>User logged in</h1>
+          <button onClick={() => setLoggedIn(false)}>Log Out</button>
+        </div>
+      )}
+    </>
   );
 }
 
