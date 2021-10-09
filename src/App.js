@@ -13,14 +13,20 @@ function App() {
           <h1>My Spotify Architect</h1>
           <h2>Visualize your data</h2>
           <button onClick={() => setLoggedIn(true)}>Spotify Log In</button>
-          <LineGraph/>
+          <div className="lineGraph">
+            <LineGraph/>
+          </div>
         </div>
       )}
       {loggedIn && (
         <div className="App">
           <h1>My Data</h1>
-          <h2 className="top10tracks">My Top 10 Tracks </h2>
-          <LineChart />
+          <div className="data">
+            <h2 className="top10tracks">My Top 10 Tracks </h2>
+            <div className="chart">
+              <LineChart />
+            </div>
+          </div>
           <button onClick={() => setLoggedIn(false)}>Log Out</button>
         </div>
       )}

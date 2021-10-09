@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 .App {
   text-align: center;
+  font-family: "Bebas Neue", cursive;
 }
 
 .App-logo {
@@ -35,4 +38,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.top10tracks {
+  width: auto;
+  display: inline-block;
+  outline: 1px black;
+  background-color: aliceblue;
+}
+
+.chart {
+  width: auto;
+  display: inline-block;
+  outline: 1px blue;
+  background-color: antiquewhite;
 }
