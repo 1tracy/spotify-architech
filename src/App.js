@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState, useEffect, useRef } from 'react';
 import Nav from './Nav';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 import LineChart from './charts/chart';
 
 function App() {
@@ -24,18 +25,6 @@ function App() {
     </div>
   );
 
-  useEffect(() => {
-    const requestData = {
-        method: 'POST',
-        headers: {
-        },
-        body: JSON.stringify({ input: "test-input1" })
-    };
-    fetch('http://localhost:5000/time', requestData)
-        .then(response => response.json())
-        .then(responseJSON => console.log("responseJSON " + responseJSON.response));
-}, []) 
-
   return (
     <>
       {!loggedIn &&  (
@@ -44,6 +33,8 @@ function App() {
           <h1 className= "App-title" >My Spotify Architect</h1>
           <h2 className= "App-description">Visualize your data</h2>
           <button type = "button" class="signIn" onClick={() => setLoggedIn(true)}>Log In With Spotify</button>
+       
+          
           </div>
         </body>
         
