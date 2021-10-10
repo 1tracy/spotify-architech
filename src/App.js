@@ -3,7 +3,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import Nav from './Nav';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import LineChart from './charts/chart';
-import { ReactComponent as LineGraph } from './vectors/Background.svg';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -38,8 +37,9 @@ function App() {
         
       )}
       {loggedIn && (
+        <body className = "MyData">
         <div className="App">
-          <h1>My Data</h1>
+          <h1 className= "Data-title">My Data</h1>
           <div className="data">
             <div className="top10tracks">
               <h2>My Top 10 Tracks </h2>
@@ -52,6 +52,7 @@ function App() {
           </div>
           <button type = "button" class="signIn" onClick={() => setLoggedIn(false)}>Log Out</button>
         </div>
+        </body>
       )}
     </>
   );

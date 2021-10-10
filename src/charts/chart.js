@@ -24,12 +24,13 @@ const options = {
       },
     ],
   },
+  responsive: false
 };
 
 const LineChart = () => (
   <>
-    <div className='header'>
-      <h1 className='title'>Line Chart</h1>
+    <div className='chartHeader'>
+      <h1 className='chartTitle'>Line Chart</h1>
     </div>
     <Line data={data} options={options} />
   </>
