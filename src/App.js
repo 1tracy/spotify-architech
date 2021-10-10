@@ -20,9 +20,9 @@ function App() {
                   ['love nwantiti (ah ah ah)', 'CKay'], 
                   ['Cold Heart - PNAU Remix', 'Elton John, Dua Lipa, PNAU']];
   const listTracks = tracks.map((track) => 
-    <div>
-    <li className='li-title'>{track[0]}</li>
-    <li className='li-singer'>{track[1]}</li>
+    <div className = 'listBox'>
+    <li className='li-track'>{track[0]}</li>
+    <li className='li-artist'>{track[1]}</li>
     </div>
   );
   

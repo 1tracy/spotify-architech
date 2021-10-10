@@ -76,9 +76,11 @@
 }
 .data {
   display: flex;
+  line-height: 20px;
+
 }
 .MyData {
-  background-color: #1c2016;
+  background-color: #1C2016;
   overflow: auto;
   height: 100vh;
   font-family: Roboto;
@@ -87,13 +89,14 @@
 }
 
 .top10tracks {
-  padding: 3vh;
+  padding: 10px;
   width: auto;
   display: flex;
   outline: 2px black;
   color: black;
   background: #e6e49f;
-  box-sizing: border-box;
+  background: #e6e49f;
+  box-sizing: content-box;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
 canvas {
@@ -104,7 +107,6 @@ canvas {
   background-color: antiquewhite;
   display: inline-block;
   width: 100%;
-  padding-left: 0%;
 }
 .chartBtn {
   display: flex;
@@ -167,7 +169,25 @@ ul {
 }
 
 .chartTitle {
-  color: black;
+
+  color:black;
+}
+
+
+.li-track {
+  line-height: 25px;
+  font-family:monospace;
+  font-size: 150%;
+  position: left;
+}
+
+.li-artist
+ {
+  line-height: 25px;
+  font-family:monospace;
+  font-size: 110%;
+  position: left;
+  color: rgb(54, 54, 54);
 }
 
 .displaychart {
