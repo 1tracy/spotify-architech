@@ -31,7 +31,7 @@
 }
 
 .applogo{
-  position:relative;
+  position:center;
   filter: drop-shadow(3px 3px 10px rgba(230, 228, 159, 0.3));}
 
 .applogo:focus, .applogo:hover{

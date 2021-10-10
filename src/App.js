@@ -92,8 +92,8 @@ function App() {
         <body className = "landing">
           <div className="App" >
           <h1 className= "App-title" >My Spotify Architect</h1>
-          <div className="applogo">
-            <img src={require('./vectors/architect_logo.png').default} width={200} heigh={200} alt="Architect Logo" />
+          <div>
+            <img className="applogo" src={require('./vectors/architect_logo.png').default} width={200} heigh={200} alt="Architect Logo" />
           </div>
           <h2 className= "App-description">Visualize your data</h2>
           <button type = "button" class="btn draw-border" onClick={() => setLoggedIn(true)}>Log In With Spotify</button>
