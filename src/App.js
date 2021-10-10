@@ -107,8 +107,7 @@ function App() {
           <h1 className= "Data-title">My Data</h1>
           <div className="data">
             <div className="top10tracks">
-              <h2>My Top 10 Tracks </h2>
-              <ul>{listTracks}</ul>
+              <ul><h2>My Top 10 Tracks </h2>{listTracks}</ul>
             </div>
             
             <div className="chart">
