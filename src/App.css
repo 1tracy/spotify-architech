@@ -1,8 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
+.landing {
+  background-image: url('./vectors/Background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+}
+
 .App {
+  position : static;
   text-align: center;
   font-family: "Bebas Neue", cursive;
+  background-size: cover;
+  height: 100vh;
+}
+
+.LineGraph {
+  background-size: cover;
 }
 
 .App-logo {
@@ -17,7 +34,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -44,12 +60,56 @@
   width: auto;
   display: inline-block;
   outline: 1px black;
-  background-color: aliceblue;
+  background-color: #25291C;
 }
 
 .chart {
   width: auto;
   display: inline-block;
   outline: 1px blue;
-  background-color: antiquewhite;
+  background-color: antiquewhite;;
+}
+
+
+.signIn {
+  width: 175px;
+  height: 45px;
+
+  background: #E6E49F;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #25291C;
+}
+
+.App-title {
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 84px;
+
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.App-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 56px;
+  text-align: center;
+
+  color: #FFFFFF;
+
 }
