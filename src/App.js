@@ -86,8 +86,6 @@ function App() {
     </>
   );
 
-  
-
   return (
     <>
       {!loggedIn &&  (
@@ -98,7 +96,7 @@ function App() {
             <img src={require('./vectors/architect_logo.png').default} width={200} heigh={200} alt="Architect Logo" />
           </div>
           <h2 className= "App-description">Visualize your data</h2>
-          <button type = "button" class="signIn" onClick={() => setLoggedIn(true)}>Log In With Spotify</button>
+          <button type = "button" class="btn draw-border" onClick={() => setLoggedIn(true)}>Log In With Spotify</button>
           </div>
           
         </body>
@@ -124,7 +122,7 @@ function App() {
             </div>
 
           </div>
-          <button type = "button" class="signIn" onClick={() => setLoggedIn(false)}>Log Out</button>
+          <button type = "button" class="logout" onClick={() => setLoggedIn(false)}>Log Out</button>
         </div>
         </body>
       )}
