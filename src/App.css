@@ -30,6 +30,10 @@
   pointer-events: none;
 }
 
+.applogo{
+  position:relative;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -196,6 +200,7 @@ ul {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   margin-top: 10px;
+  margin-inline: 10px;
 
   font-family: Roboto;
   font-style: normal;
@@ -204,4 +209,9 @@ ul {
   line-height: 28px;
   text-align: center;
   color: #25291c;
+}
+
+.displaychart:hover {
+  background: #e3e7d3;
+  text-shadow: px 4px 4px rgba(0, 0, 0, 0.25);
 }
