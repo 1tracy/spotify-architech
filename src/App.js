@@ -111,8 +111,8 @@ function App() {
             </div>
             
             <div className="chart">
-            <button type = "button" class="signIn" onClick={() => setChartDisplay(0)}>Display Chart 1</button>
-            <button type = "button" class="signIn" onClick={() => setChartDisplay(1)}>Display Chart 2</button>
+            <button type = "button" class="displaychart" onClick={() => setChartDisplay(0)}>Display Chart 1</button>
+            <button type = "button" class="displaychart" onClick={() => setChartDisplay(1)}>Display Chart 2</button>
               {chartDisplay == 0 ? (
                 <LineChart1/>
               ) : (
