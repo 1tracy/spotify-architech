@@ -65,13 +65,27 @@
   font-weight: normal;
   font-size: 36px;
 
+<<<<<<< Updated upstream
   color: #FFFFFF;
   text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.50);
+=======
+  color: #ffffff;
+  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+.data {
+  display: flex;
+  line-height: 20px;
+>>>>>>> Stashed changes
 }
 
 .MyData {
+<<<<<<< Updated upstream
   background-color: #1C2016;
   overflow: auto;
+=======
+  background-color: #1c2016;
+  overflow: scroll;
+>>>>>>> Stashed changes
   height: 100vh;
   font-family: Roboto;
   font-style: normal;
@@ -80,13 +94,18 @@
 }
 
 .top10tracks {
-  padding: 3vh;
+  padding: 10px;
   width: auto;
   display: inline-block;
   outline: 2px black;
   color: black;
+<<<<<<< Updated upstream
   background: #E6E49F;
   box-sizing: border-box;
+=======
+  background: #e6e49f;
+  box-sizing: content-box;
+>>>>>>> Stashed changes
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 
@@ -96,6 +115,15 @@
   display: inline-block;
   outline: 1px blue;
   background-color: antiquewhite;
+<<<<<<< Updated upstream
+=======
+  display: inline-block;
+  width: 100%;
+}
+.chartBtn {
+  display: flex;
+  justify-content: center;
+>>>>>>> Stashed changes
 }
 
 
@@ -151,5 +179,26 @@
 }
 
 .chartTitle {
+<<<<<<< Updated upstream
   color:black;
 }
+=======
+  color: black;
+}
+
+.li-track {
+  line-height: 25px;
+  font-family:monospace;
+  font-size: 150%;
+  position: left;
+}
+
+.li-artist
+ {
+  line-height: 25px;
+  font-family:monospace;
+  font-size: 110%;
+  position: left;
+  color: rgb(54, 54, 54);
+}
+>>>>>>> Stashed changes

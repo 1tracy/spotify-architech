@@ -6,7 +6,14 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   const tracks = ['track1', 'track2', 'track3', 'track4', 'track5', 'track6', 'track7', 'track8', 'track9', 'track10'];
   const listTracks = tracks.map((track) => 
+<<<<<<< Updated upstream
     <li>{track}</li>
+=======
+    <div className = 'listBox'>
+    <li className='li-track'>{track[0]}</li>
+    <li className='li-artist'>{track[1]}</li>
+    </div>
+>>>>>>> Stashed changes
   );
 
   
@@ -32,7 +39,17 @@ function App() {
               <ul>{listTracks}</ul>
             </div>
             <div className="chart">
+<<<<<<< Updated upstream
               <LineChart />
+=======
+            <button type = "button" class="signIn" onClick={() => setChartDisplay(0)}>Display Chart 1</button>
+            <button type = "button" class="signIn" onClick={() => setChartDisplay(1)}>Display Chart 2</button>
+              {chartDisplay === 0 ? (
+                <LineChart1/>
+              ) : (
+                <LineChart2/>
+              )}
+>>>>>>> Stashed changes
             </div>
 
           </div>
