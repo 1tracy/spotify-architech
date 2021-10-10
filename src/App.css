@@ -7,19 +7,21 @@
   background-size: cover;
   overflow: hidden;
   height: 100vh;
-  margin: 0;
 }
 
 .App {
+  padding-top: 10%;
   position: static;
   text-align: center;
-  font-family: "Bebas Neue", cursive;
   background-size: cover;
   height: 100vh;
+  color: white;
 }
 
 .LineGraph {
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .App-logo {
@@ -56,16 +58,42 @@
   }
 }
 
+.Data-title {
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+
+  color: #ffffff;
+  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.MyData {
+  background-color: #1c2016;
+  overflow: auto;
+  height: 100vh;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}
+
 .top10tracks {
+  padding: 3vh;
   width: auto;
   display: inline-block;
-  list-style-type: none;
-  list-style: none;
+  outline: 2px black;
+  color: black;
+  background: #e6e49f;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 }
 
 .chart {
-  width: auto;
   display: inline-block;
+  outline: 1px blue;
+  background-color: antiquewhite;
 }
 
 .signIn {
@@ -87,6 +115,11 @@
   color: #25291c;
 }
 
+.signIn:hover {
+  background: #e3e7d3;
+  text-shadow: px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .App-title {
   text-align: center;
   font-family: Roboto;
@@ -96,7 +129,7 @@
   line-height: 84px;
 
   color: #ffffff;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 .App-description {
@@ -112,4 +145,11 @@
 
 ul {
   list-style-type: none;
+}
+.chartHeader {
+  color: black;
+}
+
+.chartTitle {
+  color: black;
 }
