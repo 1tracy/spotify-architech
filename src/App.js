@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Nav from './Nav';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Line } from 'react-chartjs-2';
+import logo from './vectors/architect_logo.png';
 
 //import LineChart from './charts/chart';
 
@@ -93,13 +94,13 @@ function App() {
         <body className = "landing">
           <div className="App" >
           <h1 className= "App-title" >My Spotify Architect</h1>
+          <div className="applogo">
+            <img src={require('./vectors/architect_logo.png').default} width={200} heigh={200} alt="Architect Logo" />
+          </div>
           <h2 className= "App-description">Visualize your data</h2>
           <button type = "button" class="signIn" onClick={() => setLoggedIn(true)}>Log In With Spotify</button>
           </div>
           
-          <div className="logo">
-            <img className= "applogo" src="architect_logo.png" alt="Architect Logo"></img>
-          </div>
         </body>
         
       )}
