@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 
 .landing {
-  background-image: url('./vectors/Background.jpg');
+  background-image: url("./vectors/Background.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;  
+  background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
   height: 100vh;
@@ -64,90 +65,72 @@
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
+  margin-top: -8%;
 
-<<<<<<< Updated upstream
-  color: #FFFFFF;
-  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.50);
-=======
   color: #ffffff;
   text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
 .data {
   display: flex;
   line-height: 20px;
->>>>>>> Stashed changes
-}
 
+}
 .MyData {
-<<<<<<< Updated upstream
   background-color: #1C2016;
   overflow: auto;
-=======
-  background-color: #1c2016;
-  overflow: scroll;
->>>>>>> Stashed changes
   height: 100vh;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  
 }
 
 .top10tracks {
   padding: 10px;
   width: auto;
-  display: inline-block;
+  display: flex;
   outline: 2px black;
   color: black;
-<<<<<<< Updated upstream
-  background: #E6E49F;
-  box-sizing: border-box;
-=======
+  background: #e6e49f;
   background: #e6e49f;
   box-sizing: content-box;
->>>>>>> Stashed changes
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-
 }
-
+canvas {
+  justify-content: center;
+}
 .chart {
-  display: inline-block;
   outline: 1px blue;
   background-color: antiquewhite;
-<<<<<<< Updated upstream
-=======
   display: inline-block;
   width: 100%;
 }
 .chartBtn {
   display: flex;
   justify-content: center;
->>>>>>> Stashed changes
 }
-
 
 .signIn {
   width: 175px;
   height: 45px;
 
-  background: #E6E49F;
+  background: #e6e49f;
   border: 2px solid #000000;
   box-sizing: border-box;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
-  
+  margin-top: 10px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 28px;
   text-align: center;
-  color: #25291C;
+  color: #25291c;
 }
 
 .signIn:hover {
-  background: #E3E7D3;
+  background: #e3e7d3;
   text-shadow: px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -159,8 +142,8 @@
   font-size: 36px;
   line-height: 84px;
 
-  color: #FFFFFF;
-  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.50);
+  color: #ffffff;
+  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 .App-description {
@@ -171,20 +154,21 @@
   line-height: 56px;
   text-align: center;
 
-  color: #FFFFFF;
+  color: #ffffff;
+}
 
+ul {
+  list-style-type: none;
 }
 .chartHeader {
-  color:black;
+  color: black;
 }
 
 .chartTitle {
-<<<<<<< Updated upstream
+
   color:black;
 }
-=======
-  color: black;
-}
+
 
 .li-track {
   line-height: 25px;
@@ -201,4 +185,23 @@
   position: left;
   color: rgb(54, 54, 54);
 }
->>>>>>> Stashed changes
+
+.displaychart {
+  width: 175px;
+  height: 45px;
+
+  background: #e6e49f;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  margin-top: 10px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #25291c;
+}
