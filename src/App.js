@@ -72,7 +72,7 @@ function App() {
       <div className='chartHeader'>
         <h1 className='chartTitle'>Chart1</h1>
       </div>
-      <Line data={data1} options={options} />
+      <Line data={data1} options={{ maintainAspectRatio: true }} />
     </>
   );
 
@@ -81,7 +81,7 @@ function App() {
       <div className='chartHeader'>
         <h1 className='chartTitle'>Chart2</h1>
       </div>
-      <Line data={data2} options={options} />
+      <Line data={data2} options={{ maintainAspectRatio: true }} />
     </>
   );
 
