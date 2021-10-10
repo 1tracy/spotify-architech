@@ -8,9 +8,21 @@ import { ReactComponent as LineGraph } from './vectors/Background.svg';
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [apiResponse, setapiResponse] = useState('');
-  const tracks = ['track1', 'track2', 'track3', 'track4', 'track5', 'track6', 'track7', 'track8', 'track9', 'track10'];
+  const tracks = [['Shivers', 'Ed Sheeran'], 
+                  ['STAY (with Justin Bieber)', 'The Kid LAROI, Justin Bieber'],
+                  ['My Universe', 'Coldplay, BTS'],
+                  ['Woman', 'Doja Cat'], 
+                  ['INDUSTRY BABY (feat. Jake Harlow)', 'Lil Nas X, Jack Harlow'], 
+                  ['Heat Waves', 'Glass Animals'], 
+                  ['Beggin', 'Maneskin'], 
+                  ['THATS WHAT I WANT', 'Lil Nas X'], 
+                  ['love nwantiti (ah ah ah)', 'CKay'], 
+                  ['Cold Heart - PNAU Remix', 'Elton John, Dua Lipa, PNAU']];
   const listTracks = tracks.map((track) => 
-    <li>{track}</li>
+    <div>
+    <li className='li-title'>{track[0]}</li>
+    <li className='li-singer'>{track[1]}</li>
+    </div>
   );
 
   useEffect(() => {
@@ -32,7 +44,7 @@ function App() {
           <div className="App" >
           <h1 className= "App-title" >My Spotify Architect</h1>
           <h2 className= "App-description">Visualize your data</h2>
-          <button type = "button" class="signIn" onClick={() => setLoggedIn(true)}>Spotify Log In</button>
+          <button type = "button" class="signIn" onClick={() => setLoggedIn(true)}>Log In With Spotify</button>
           </div>
         </body>
         

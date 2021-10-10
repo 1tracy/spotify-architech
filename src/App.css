@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .landing {
-  background-image: url('./vectors/Background.jpg');
+  background-image: url("./vectors/Background.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;  
+  background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
   height: 100vh;
@@ -11,7 +11,7 @@
 }
 
 .App {
-  position : static;
+  position: static;
   text-align: center;
   font-family: "Bebas Neue", cursive;
   background-size: cover;
@@ -59,35 +59,32 @@
 .top10tracks {
   width: auto;
   display: inline-block;
-  outline: 1px black;
-  background-color: #25291C;
+  list-style-type: none;
+  list-style: none;
 }
 
 .chart {
   width: auto;
   display: inline-block;
-  outline: 1px blue;
-  background-color: antiquewhite;;
 }
-
 
 .signIn {
   width: 175px;
   height: 45px;
 
-  background: #E6E49F;
+  background: #e6e49f;
   border: 2px solid #000000;
   box-sizing: border-box;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
-  
+
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 28px;
   text-align: center;
-  color: #25291C;
+  color: #25291c;
 }
 
 .App-title {
@@ -98,7 +95,7 @@
   font-size: 36px;
   line-height: 84px;
 
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -110,6 +107,9 @@
   line-height: 56px;
   text-align: center;
 
-  color: #FFFFFF;
+  color: #ffffff;
+}
 
+ul {
+  list-style-type: none;
 }
