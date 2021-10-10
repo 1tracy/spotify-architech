@@ -21,8 +21,9 @@ function App() {
                   ['Cold Heart - PNAU Remix', 'Elton John, Dua Lipa, PNAU']];
   const listTracks = tracks.map((track) => 
     <div>
-    <li className='li-title'>{track[0]}</li>
-    <li className='li-singer'>{track[1]}</li>
+    <div className = 'listBox'>
+    <li className='li-track'>{track[0]}</li>
+    <li className='li-artist'>{track[1]}</li>
     </div>
   );
   
@@ -111,6 +112,8 @@ function App() {
             </div>
             
             <div className="chart">
+              <LineChart />
+
             <button type = "button" class="displaychart" onClick={() => setChartDisplay(0)}>Display Chart 1</button>
             <button type = "button" class="displaychart" onClick={() => setChartDisplay(1)}>Display Chart 2</button>
               {chartDisplay == 0 ? (
