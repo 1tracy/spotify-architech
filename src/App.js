@@ -95,8 +95,10 @@ function App() {
           <h1 className= "App-title" >My Spotify Architect</h1>
           <h2 className= "App-description">Visualize your data</h2>
           <button type = "button" class="signIn" onClick={() => setLoggedIn(true)}>Log In With Spotify</button>
-       
+          </div>
           
+          <div className="logo">
+            <img className= "applogo" src="architect_logo.png" alt="Architect Logo"></img>
           </div>
         </body>
         
