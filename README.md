@@ -2,6 +2,23 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+initialize flask venv
+
+```code
+cd api
+py -m venv venv
+venv/scripts/activate
+pip install -r requirements.txt
+flask run
+```
+
+start react at root
+
+```code
+yarn
+yarn start
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,16 +1,30 @@
 import './App.css';
 import React, { useState, useEffect, useRef } from 'react';
+import Nav from './Nav';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import LineChart from './charts/chart';
 import { ReactComponent as LineGraph } from './vectors/landingpage.svg';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
+  const [apiResponse, setapiResponse] = useState('');
   const tracks = ['track1', 'track2', 'track3', 'track4', 'track5', 'track6', 'track7', 'track8', 'track9', 'track10'];
   const listTracks = tracks.map((track) => 
     <li>{track}</li>
   );
 
-  
+  useEffect(() => {
+    const requestData = {
+        method: 'POST',
+        headers: {
+        },
+        body: JSON.stringify({ input: "test-input1" })
+    };
+    fetch('http://localhost:5000/time', requestData)
+        .then(response => response.json())
+        .then(responseJSON => console.log("responseJSON " + responseJSON.response));
+}, []) 
+
   return (
     <>
       {!loggedIn &&  (
